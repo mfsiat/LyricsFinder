@@ -1,5 +1,5 @@
 import React from 'react'
-import Track from '../tracks/Tracks';
+import Tracks from '../tracks/Tracks';
 
 const Index = () => {
   return (
