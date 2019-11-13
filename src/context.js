@@ -14,7 +14,7 @@ export class Provider extends Component {
       { track: { track_name:'123' } },
     ],
     heading: 'Top 10 Tracks'  // the heading changes after the search 
-  }
+  }; 
 
   render() {
     return (
