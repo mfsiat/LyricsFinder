@@ -15,6 +15,9 @@ export class Provider extends Component {
   };
 
   // it's a lifecycle method
+  // this mm api has some problem so we are using another proxy with our api 
+  // we are putting the proxy in front of our url and the request will go through 
+  // the proxy 
   componentDidMount() {
     axios
       .get(
