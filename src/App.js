@@ -4,10 +4,17 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Index from "./components/layout/Index";
 
+// Because The Provider is not a default we need to
+// import it inside curly braces 
+// import Provider from './context';
+
+import { Provider } from './context';
+
 import "./App.css";
 
 function App() {
   return (
+    <Provider>
     <Router>
       <React.Fragment>
         <Navbar />
@@ -18,6 +25,7 @@ function App() {
         </div>
       </React.Fragment>
     </Router>
+    </Provider>
   );
 }
 
