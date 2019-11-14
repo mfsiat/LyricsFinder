@@ -3,20 +3,25 @@ import axios from "axios";
 
 import { Consumer } from "../../context";
 
+// it will be a class based component 
 class Search extends Component {
+  // we have to manipulate the global state 
   state = {
     trackTitle: ""
   };
 
+  // finds the track 
+  // we are just using the search url given by the api provider
+  // 
   findTrack = (e) => {
     e.preventDefault();
     axios
       .get(
-        `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/chart.tracks.get?chart_name=top&page=1&page_size=10&country=us&f_has_lyrics=1&apikey=${process.env.REACT_APP_MM_KEY}`
+        `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.search?q_track=${this.state.trackTitle}&page_size=10&page=1&s_track_rating=desc&apikey=${process.env.REACT_APP_MM_KEY}`
       )
       .then(res => {
-        // console.log(res.data);
-        this.setState({track_list: res.data.message.body.track_list});
+        console.log(res.data);
+        // this.setState({track_list: res.data.message.body.track_list});
       })
       .catch(err => console.log(err));
 
