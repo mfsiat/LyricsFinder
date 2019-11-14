@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Link } from 'react-router-dom';
-
+import Moment from 'react-moment';
 import Spinner from "../layout/Spinner";
 
 class Lyrics extends Component {
@@ -31,7 +31,7 @@ class Lyrics extends Component {
   render() {
     // we are destructuring the state and pulling out the data so that we dont need to call state to fetch track and lyrics data 
     const { track, lyrics } = this.state; 
-    console.log(track); // debug pupose 
+    // console.log(track); // debug pupose 
     if(track === undefined || lyrics === undefined || Object.keys(track).length === 0 || Object.keys(lyrics).length === 0) {
       return <Spinner />
     } else {
@@ -40,7 +40,7 @@ class Lyrics extends Component {
           <Link to="/" className="btn btn-dark btn-sm mb-4">Go Back</Link>
           <div className="card">
             <h5 className="card-header">
-      {track.track_name} by <span className="text-secondary">{track.artist_name}</span>
+              {track.track_name} by <span className="text-secondary">{track.artist_name}</span>
             </h5>
             <div className="card-body">
               <p className="card-text">
@@ -59,7 +59,7 @@ class Lyrics extends Component {
               <strong>Explicit Words</strong>: {track.explicit === 0 ? 'No' : 'Yes'}
             </li>
             <li className="list-group-item">
-              <strong>Release Date</strong>: {track.first_release_date}
+              <strong>Release Date</strong>: <Moment format="MM/DD/YYYY">{track.updated_time}</Moment>
             </li>
           </ul>
         </React.Fragment>
@@ -69,3 +69,5 @@ class Lyrics extends Component {
 }
 
 export default Lyrics;
+
+
