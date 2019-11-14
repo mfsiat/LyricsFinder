@@ -59,7 +59,7 @@ class Lyrics extends Component {
               <strong>Explicit Words</strong>: {track.explicit === 0 ? 'No' : 'Yes'}
             </li>
             <li className="list-group-item">
-              <strong>Release Date</strong>: <Moment format="MM/DD/YYYY">{track.updated_time}</Moment>
+              <strong>Last Updated Date</strong>: <Moment format="MM/DD/YYYY">{track.updated_time}</Moment>
             </li>
           </ul>
         </React.Fragment>
