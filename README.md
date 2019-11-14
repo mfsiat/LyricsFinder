@@ -6,8 +6,12 @@ Find lyrics of your desired music only by typping songs name.
 
 Deployed on Heroku [Click Here](https://lrcfinder.herokuapp.com/)
 
-### Limitations 
+## ScreenShot
 
-- Some songs don't have any lyrics or their lyrics were not updated by the MusicXMatch so our application gives us error. 
+![](https://github.com/mfsiat/Lyrics-Search-with-MusicXMatch-API/blob/master/lfinder.gif)
 
-- Others are all good. 
+### Limitations
+
+- Some songs don't have any lyrics or their lyrics were not updated by the MusicXMatch so our application gives us error.
+
+- Others are all good.
