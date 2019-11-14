@@ -31,6 +31,7 @@ class Lyrics extends Component {
   render() {
     // we are destructuring the state and pulling out the data so that we dont need to call state to fetch track and lyrics data 
     const { track, lyrics } = this.state; 
+    console.log(track); // debug pupose 
     if(track === undefined || lyrics === undefined || Object.keys(track).length === 0 || Object.keys(lyrics).length === 0) {
       return <Spinner />
     } else {
@@ -55,7 +56,7 @@ class Lyrics extends Component {
               <strong>Song Genre</strong>: {track.primary_genres.music_genre_list[0].music_genre.music_genre_name}
             </li>
             <li className="list-group-item">
-              <strong>Explicit Words</strong>:{' '}{track.explicit === 0 ? 'No' : 'Yes'}
+              <strong>Explicit Words</strong>: {track.explicit === 0 ? 'No' : 'Yes'}
             </li>
             <li className="list-group-item">
               <strong>Release Date</strong>: {track.first_release_date}
