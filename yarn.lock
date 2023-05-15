@@ -2833,8 +2833,8 @@ decamelize@^1.2.0:
   resolved "https://registry.npmjs.org/decamelize/-/decamelize-1.2.0.tgz"
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.npmjs.org/decode-uri-component/-/decode-uri-component-0.2.0.tgz"
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
 
 deep-equal@^1.0.1:
   version "1.0.1"
@@ -5301,16 +5301,15 @@ json3@^3.3.2:
   resolved "https://registry.npmjs.org/json3/-/json3-3.3.2.tgz"
 
 json5@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/json5/-/json5-1.0.1.tgz"
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-1.0.2.tgz#63d98d60f21b313b77c4d6da18bfa69d80e1d593"
+
   dependencies:
     minimist "^1.2.0"
 
 json5@^2.1.2:
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/json5/-/json5-2.2.0.tgz"
-  dependencies:
-    minimist "^1.2.5"
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.3.tgz#78cd6f1a19bdc12b73db5ad0c61efd66c1e29283"
 
 jsonfile@^4.0.0:
   version "4.0.0"
@@ -5834,8 +5833,8 @@ mute-stream@0.0.8:
   resolved "https://registry.npmjs.org/mute-stream/-/mute-stream-0.0.8.tgz"
 
 nan@^2.12.1:
-  version "2.16.0"
-  resolved "https://registry.yarnpkg.com/nan/-/nan-2.16.0.tgz#664f43e45460fb98faf00edca0bb0d7b8dce7916"
+  version "2.17.0"
+  resolved "https://registry.yarnpkg.com/nan/-/nan-2.17.0.tgz#c0150a2368a182f033e9aa5195ec76ea41a199cb"
 
 nanomatch@^1.2.9:
   version "1.2.13"
@@ -7197,11 +7196,11 @@ q@^1.1.2:
 
 qs@6.9.7:
   version "6.9.7"
-  resolved "https://registry.npmjs.org/qs/-/qs-6.9.7.tgz"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.9.7.tgz#4610846871485e1e048f44ae3b94033f0e675afe"
 
 qs@~6.5.2:
-  version "6.5.2"
-  resolved "https://registry.npmjs.org/qs/-/qs-6.5.2.tgz"
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.3.tgz#3aeeffc91967ef6e35c0e488ef46fb296ab76aad"
 
 query-string@^4.1.0:
   version "4.3.4"
